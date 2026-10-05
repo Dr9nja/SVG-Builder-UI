@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/App.test.tsx
+src/logo.svg
+public/logo192.png
+public/logo512.png
+public/manifest.json
