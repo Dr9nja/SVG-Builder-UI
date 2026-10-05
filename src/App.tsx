@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import { cpSync } from 'fs';
+//import { cpSync } from 'fs';
 
 function App() {
 
