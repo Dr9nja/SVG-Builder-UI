@@ -32,7 +32,7 @@ The easy to lead, drag and drop UI allows people to create their own widgets, de
   - Brainshtorming the resize, rotation functionality.
   - Menu that appears after clicking on the item.
 
-## Development Vlog
+## Development Blog
 
   - 05.10.26 – The first version of code along with the site was released!
   - 06.10.26 – Some preparations for the future, such as indexing files in `index.ts` files.
