@@ -1,6 +1,7 @@
-# SVG-Builder-UI, a user interface for SVG-Builder-core
 
 ![SVG-Builder Icon](/dist/SVG-Builder-Icon.png)
+
+# SVG-Builder-UI, a user interface for SVG-Builder-core
 
 
 ## What can I do on the site?
