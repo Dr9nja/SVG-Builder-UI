@@ -1,8 +1,5 @@
-//import React from 'react';
-import './App.css';
-//import useDragger from './hooks/useDragger';
-import Box from './components/Box';
-import Circle from './components/Circle';
+import './design_sheets/index';
+import * as component from './components/index';
 
 function App() {
 
@@ -10,13 +7,15 @@ function App() {
 //const boxRef = useRef<HTMLDivElement>(null)
 
   //useDragger("pink-box")
-
-
   return (
     <main>
       <div className='container'>
-       <Box />
-       <Circle />
+       <component.Box />
+       <component.Box />
+       <component.Box />
+       <component.Box />
+       <component.Box />
+       <component.Circle />
       </div>
     </main>
   );
