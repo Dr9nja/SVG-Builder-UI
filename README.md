@@ -8,7 +8,7 @@
 The easy to lead, drag and drop UI allows people to create their own widgets, design them and maintain!
 
 > [!WARNING]
-> The project is only on it's really early steps, expect a lot of bugs! Will appreciate everyone who would report bugs into > 'Issues' section!
+> The project is only on it's really early steps, expect a lot of bugs! Will appreciate everyone who would report bugs into 'Issues' section!
 
 
 ## Where can I find the site? 
@@ -17,6 +17,7 @@ The easy to lead, drag and drop UI allows people to create their own widgets, de
 
 ## Plans
 
+  - [ ] Add sidebar to pick new instances from, such as `Box.tsx`, `Circle.tsx`, etc...
   - [ ] Add presets of my widgets so creating from scratch would be easier!
   - [ ] Make the drag and drop interface that will be easy to lead.
   - [ ] Add basic modifiers, such as rotation, opacity, color...
@@ -27,6 +28,7 @@ The easy to lead, drag and drop UI allows people to create their own widgets, de
 
 ## Currently Working
 
+  - TOP PRIORITY: Rework `/hooks.useDragger.ts` to be compatible with `/hooks.useInstanceMenu.ts` and future resize/roatate hook `/hooks.useItemTransformator`.
   - Creating early basic interface without backend for now.
   - Brainshtorming the resize, rotation functionality.
   - Menu that appears after clicking on the item.
@@ -35,6 +37,7 @@ The easy to lead, drag and drop UI allows people to create their own widgets, de
 
   - 05.10.26 – The first version of code along with the cite was released!
   - 06.10.26 – Some preparations for the future, such as indexing files in `index.ts` files.
+  - 07.10.26 - Code for instance menu and some additional css sheets for easier work.
 
 
 [^1]: `/core` code reffering other Repository that generates widget, you can find it [here](https://github.com/Dr9nja/SVG-Builder)
