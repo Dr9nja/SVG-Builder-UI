@@ -1,7 +1,7 @@
 {
     "UILanguage": "Eng",
     
-    "AccentColor": "Cyan",
+    "AccentColor": "#3b82f6",
 
     "gridSize": 10,
     "rotationStepDegrees": 15
