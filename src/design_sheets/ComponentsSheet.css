@@ -12,11 +12,6 @@
   transition: opacity 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
 
-.box.selected {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-}
-
 .box:hover {
   opacity: 0.85; 
 }
@@ -37,12 +32,48 @@
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
 
-.circle.selected {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-}
-
 .circle:hover {
   opacity: 0.85; 
 }
 
+.triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  transition: opacity 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.triangle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(165, 165, 165);
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  pointer-events: none;
+}
+
+.box.selected,
+.triangle.selected {
+  border-color: var(--canvas-accent-color);
+  box-shadow: 0 0 0 2px var(--canvas-accent-color);
+}
+
+.circle.selected::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border: 2px solid var(--canvas-accent-color);
+  border-radius: 0;
+  box-shadow: 0 0 0 2px var(--canvas-accent-color);
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.triangle:hover {
+  opacity: 0.85;
+}
