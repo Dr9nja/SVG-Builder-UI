@@ -6,10 +6,10 @@
 
 ## What can I do on the site?
 
-The easy to lead, drag and drop UI allows people to create their own widgets, design them and maintain!
+The easy-to-lead, drag-and-drop UI allows people to create their own widgets, design them and maintain them!
 
 > [!WARNING]
-> The project is only on it's really early steps, expect a lot of bugs! Will appreciate everyone who would report bugs into 'Issues' section!
+> The project is only in its really early steps, expect a lot of bugs! Will appreciate everyone who would report bugs in the 'Issues' section!
 
 
 ## Where can I find the site? 
@@ -24,13 +24,13 @@ The easy to lead, drag and drop UI allows people to create their own widgets, de
   - [ ] Add basic modifiers, such as rotation, resize, opacity, color... -- Half there!
   - [ ] The visual design that user create will be converted into a list of instructions `config.json` to be used as a blueprint.
   - [ ] Make sure `config.json` and `/core` code can read and write the file right.[^1]
-  - [ ] Compile button that will send a request to SVG-Builder `/core` to render both light and dark themed widgets.[^1]
+  - [ ] Compile button that will send a request to SVG-Builder `/core` to render both light and dark-themed widgets.[^1]
   - [ ] Support different formats, such as `.svg`, `.png`, `.jpeg`, and others.
 
 ## Currently Working
 
-  - TOP PRIORITY: Rework `/hooks.useDragger.ts` to be compatible with `/hooks.useInstanceMenu.ts` and future resize/roatate hook `/hooks.useItemTransformator`.
-  - Creating early basic interface without backend for now.
+  - TOP PRIORITY: Rework `/hooks.useDragger.ts` to be compatible with `/hooks.useInstanceMenu.ts` and future resize/rotate hook `/hooks.useItemTransformator`.
+  - Creating an early basic interface without a backend for now.
   - Brainshtorming the resize, rotation functionality.
   - Menu that appears after clicking on the item.
 
@@ -42,6 +42,6 @@ The easy to lead, drag and drop UI allows people to create their own widgets, de
   - 08.10.26 - Updated code for objects to support modifiers.
 
 
-[^1]: `/core` code reffering other Repository that generates widget, you can find it [here](https://github.com/Dr9nja/SVG-Builder)
+[^1]: `/core` code referring other repository that generates widget, you can find it [here](https://github.com/Dr9nja/SVG-Builder)
 
 
