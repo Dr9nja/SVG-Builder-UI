@@ -29,12 +29,13 @@ const Box: React.FC = () => {
         rotation,
         interactionHint,
         interactionHintRef,
+        setInteractionHint,
         clearInteractionHint,
         startResize,
         startRotate,
     } = useItemTransform(boxRef) // Transform hook;
 
-    const { wasClicked, mousePosition } = useDragger(id);
+    const { wasClicked, mousePosition } = useDragger(id, setInteractionHint);
     const menu = useInstanceMenu({
         id,
         wasClicked,

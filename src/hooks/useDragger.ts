@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import canvasConfs from "../CanvasConfs.json";
+import type { InteractionHint } from "./useItemTransform";
 
-//Rebuilded version 0.2
+//Rebuilded version 0.2.1 hotfix
 //-------------Made by Dr9nja 06-10-26 - 08-10-26-----------------
 
 //checking for the mouse position as a type
@@ -15,7 +16,11 @@ type UseDraggerResult = {
     mousePosition: MousePosition | null;
 };
 
-function useDragger(id: string, gridSize: number = canvasConfs.gridSize,): UseDraggerResult {
+function useDragger(
+    id: string,
+    setInteractionHint: (hint: InteractionHint | null) => void,
+    gridSize: number = canvasConfs.gridSize,
+): UseDraggerResult {
     const isClicked = useRef(false);
     const isDragged = useRef(false); // checking if item dragged
 
@@ -78,6 +83,13 @@ function useDragger(id: string, gridSize: number = canvasConfs.gridSize,): UseDr
 
             target.style.top = `${snappedY}px`;
             target.style.left = `${snappedX}px`;
+
+            setInteractionHint({
+                x: e.clientX + 14,
+                y: e.clientY + 14,
+                text: `Position: ${snappedX} × ${snappedY}`,
+            });
+
         };
 
         const onPointerUp = (e: PointerEvent) => {
@@ -95,6 +107,7 @@ function useDragger(id: string, gridSize: number = canvasConfs.gridSize,): UseDr
                 window.setTimeout(() => {setWasClicked(false); }, 150);
             }
 
+            setInteractionHint(null);
             isClicked.current = false;
             isDragged.current = false;
         };
@@ -112,7 +125,7 @@ function useDragger(id: string, gridSize: number = canvasConfs.gridSize,): UseDr
             container.removeEventListener("pointermove", onPointerMove);
             container.removeEventListener("pointerleave", onPointerUp);
         };
-    }, [id, gridSize]);
+    }, [id, gridSize, setInteractionHint]);
 
     return {
         wasClicked,
