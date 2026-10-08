@@ -21,7 +21,7 @@ The easy to lead, drag and drop UI allows people to create their own widgets, de
   - [ ] Add sidebar to pick new instances from, such as `Box.tsx`, `Circle.tsx`, etc...
   - [ ] Add presets of my widgets so creating from scratch would be easier!
   - [ ] Make the drag and drop interface that will be easy to lead.
-  - [ ] Add basic modifiers, such as rotation, opacity, color...
+  - [ ] Add basic modifiers, such as rotation, resize, opacity, color... -- Half there!
   - [ ] The visual design that user create will be converted into a list of instructions `config.json` to be used as a blueprint.
   - [ ] Make sure `config.json` and `/core` code can read and write the file right.[^1]
   - [ ] Compile button that will send a request to SVG-Builder `/core` to render both light and dark themed widgets.[^1]
@@ -39,6 +39,7 @@ The easy to lead, drag and drop UI allows people to create their own widgets, de
   - 05.10.26 – The first version of code along with the site was released!
   - 06.10.26 – Some preparations for the future, such as indexing files in `index.ts` files.
   - 07.10.26 - Code for instance menu and some additional css sheets for easier work.
+  - 08.10.26 - Updated code for objects to support modifiers.
 
 
 [^1]: `/core` code reffering other Repository that generates widget, you can find it [here](https://github.com/Dr9nja/SVG-Builder)
